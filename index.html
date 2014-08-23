@@ -13,10 +13,16 @@
 		<div class="navbar-inner">
 			<a class="brand" href="#">Bloggr</a>
 		<ul class="nav">
-			<li><a href="#">Posts</a></li>
-			<li><a>About</a></li>
+			<li>{{#link-to 'posts'}}Posts{{/link-to}}</li>
+			<li>{{#link-to 'about'}}About{{/link-to}}</a></li>
 		</ul>
 	</div>
+	{{outlet}}
+  </script>
+  
+  <script type="text/x-handlebars" id="about">
+	<p>This is a sample Emberjs app I built following the getting started guide on the Emberjs website.</p>
+	<p>Varun Naik, August 2014</p>
   </script>
 
   <script src="js/libs/jquery-1.10.2.js"></script>
